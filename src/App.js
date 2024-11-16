@@ -31,7 +31,7 @@ localStorage.setItem('todolist',JSON.stringify(updatedTodoArr));
 
 const handleDeleteTodo=(index)=>{
   let reducedTodo=[...allTodos];
-  reducedTodo.splice(index);  /*splice method is removed the items at a specific index*/
+  reducedTodo.splice(index,1);  /*splice method is removed the items at a specific index*/
   localStorage.setItem("todolist",JSON.stringify(reducedTodo));
   setTodos(reducedTodo)
                               
