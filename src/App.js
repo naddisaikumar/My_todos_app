@@ -23,6 +23,9 @@ let updatedTodoArr=[...allTodos];
 updatedTodoArr.push(newTodoItem);
 setTodos(updatedTodoArr);
 localStorage.setItem('todolist',JSON.stringify(updatedTodoArr));
+  // Clear input fields after adding the new to-do
+  setNewTitle("");
+  setNewDescription("");
 
 };
 
